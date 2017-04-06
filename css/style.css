@@ -1,0 +1,510 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Proxima Nova Light, Arial, Tahoma, sans-serif; background:#fff; color:#000; }
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+}
+button                         { cursor: pointer; padding: 0 }
+select, input, textarea,button { font:12px Tahoma, sans-serif; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+img                            { vertical-align: top; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a                              { text-decoration: none; }
+
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: Proxima Nova Light;
+    src: url(../fonts/Proxima-Nova-Light.otf);
+}
+
+@font-face {
+    font-family: Proxima Nova Regular;
+    src: url(../fonts/Proxima-Nova-Regular.otf);
+}
+
+@font-face {
+    font-family: Proxima Nova Semibold;
+    src: url(../fonts/Proxima-Nova-Semibold.otf);
+}
+
+@font-face {
+    font-family: Proxima-Nova-Condensed-Bold;
+    src: url(../fonts/Proxima-Nova-Condensed-Bold.otf);
+}
+
+/*-------------------------------header-------------------------------*/
+
+body {
+    font-family: Proxima Nova Light, Arial, Tahoma, sans-serif;
+}
+
+header {
+    overflow: hidden;
+}
+
+h1 {
+    float: left;
+}
+
+h1 a {
+    font-family: Proxima Nova Semibold, Arial, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #000;
+}
+
+a > span {
+    font-family: Proxima Nova Light, Arial, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+.welcome {
+    padding-top: 50px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#600178+28,600178+30,610178+31,620178+32,630178+33,640178+34,650178+35,660178+36,670178+37,680178+38,690178+39,6a0178+40,6b0178+41,6c0178+42,6d0178+43,6e0178+44,6f0178+45,6f0178+46,700178+47,710178+48,720178+49,730178+50,740178+51,750178+52,760178+53,760178+54,770178+55,e20186+100 */
+    background: rgb(96,1,120); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(96,1,120,1) 28%, rgba(96,1,120,1) 30%, rgba(97,1,120,1) 31%, rgba(98,1,120,1) 32%, rgba(99,1,120,1) 33%, rgba(100,1,120,1) 34%, rgba(101,1,120,1) 35%, rgba(102,1,120,1) 36%, rgba(103,1,120,1) 37%, rgba(104,1,120,1) 38%, rgba(105,1,120,1) 39%, rgba(106,1,120,1) 40%, rgba(107,1,120,1) 41%, rgba(108,1,120,1) 42%, rgba(109,1,120,1) 43%, rgba(110,1,120,1) 44%, rgba(111,1,120,1) 45%, rgba(111,1,120,1) 46%, rgba(112,1,120,1) 47%, rgba(113,1,120,1) 48%, rgba(114,1,120,1) 49%, rgba(115,1,120,1) 50%, rgba(116,1,120,1) 51%, rgba(117,1,120,1) 52%, rgba(118,1,120,1) 53%, rgba(118,1,120,1) 54%, rgba(119,1,120,1) 55%, rgba(226,1,134,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(96,1,120,1) 28%,rgba(96,1,120,1) 30%,rgba(97,1,120,1) 31%,rgba(98,1,120,1) 32%,rgba(99,1,120,1) 33%,rgba(100,1,120,1) 34%,rgba(101,1,120,1) 35%,rgba(102,1,120,1) 36%,rgba(103,1,120,1) 37%,rgba(104,1,120,1) 38%,rgba(105,1,120,1) 39%,rgba(106,1,120,1) 40%,rgba(107,1,120,1) 41%,rgba(108,1,120,1) 42%,rgba(109,1,120,1) 43%,rgba(110,1,120,1) 44%,rgba(111,1,120,1) 45%,rgba(111,1,120,1) 46%,rgba(112,1,120,1) 47%,rgba(113,1,120,1) 48%,rgba(114,1,120,1) 49%,rgba(115,1,120,1) 50%,rgba(116,1,120,1) 51%,rgba(117,1,120,1) 52%,rgba(118,1,120,1) 53%,rgba(118,1,120,1) 54%,rgba(119,1,120,1) 55%,rgba(226,1,134,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(96,1,120,1) 28%,rgba(96,1,120,1) 30%,rgba(97,1,120,1) 31%,rgba(98,1,120,1) 32%,rgba(99,1,120,1) 33%,rgba(100,1,120,1) 34%,rgba(101,1,120,1) 35%,rgba(102,1,120,1) 36%,rgba(103,1,120,1) 37%,rgba(104,1,120,1) 38%,rgba(105,1,120,1) 39%,rgba(106,1,120,1) 40%,rgba(107,1,120,1) 41%,rgba(108,1,120,1) 42%,rgba(109,1,120,1) 43%,rgba(110,1,120,1) 44%,rgba(111,1,120,1) 45%,rgba(111,1,120,1) 46%,rgba(112,1,120,1) 47%,rgba(113,1,120,1) 48%,rgba(114,1,120,1) 49%,rgba(115,1,120,1) 50%,rgba(116,1,120,1) 51%,rgba(117,1,120,1) 52%,rgba(118,1,120,1) 53%,rgba(118,1,120,1) 54%,rgba(119,1,120,1) 55%,rgba(226,1,134,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#600178', endColorstr='#e20186',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.welcome {
+    background-image: url("../img/bg-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+
+.welcome-wrapper {
+    width: 1323px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav a {
+    display: block;
+    float: left;
+    font-family: Proxima Nova Regular, Arial, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin-left: 15px;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+}
+
+nav a:hover {
+    border: 1px solid #323333;
+    border-radius: 111px;
+}
+
+h2 {
+    font-family: Proxima Nova Semibold, Arial, Tahoma, sans-serif ;
+    text-align: center;
+    font-size: 48px;
+    width: 100%;
+    color: #000;
+    overflow: hidden;
+    margin-top: 180px;
+}
+
+.welcome-wrapper p {
+    font-family: Proxima Nova Regular, Arial, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #949494;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.btn-ask {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-ask a {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#600178+28,600178+30,610178+31,620178+32,630178+33,640178+34,650178+35,660178+36,670178+37,680178+38,690178+39,6a0178+40,6b0178+41,6c0178+42,6d0178+43,6e0178+44,6f0178+45,6f0178+46,700178+47,710178+48,720178+49,730178+50,740178+51,750178+52,760178+53,760178+54,770178+55,e20186+100 */
+    background: rgb(96,1,120); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(96,1,120,1) 28%, rgba(96,1,120,1) 30%, rgba(97,1,120,1) 31%, rgba(98,1,120,1) 32%, rgba(99,1,120,1) 33%, rgba(100,1,120,1) 34%, rgba(101,1,120,1) 35%, rgba(102,1,120,1) 36%, rgba(103,1,120,1) 37%, rgba(104,1,120,1) 38%, rgba(105,1,120,1) 39%, rgba(106,1,120,1) 40%, rgba(107,1,120,1) 41%, rgba(108,1,120,1) 42%, rgba(109,1,120,1) 43%, rgba(110,1,120,1) 44%, rgba(111,1,120,1) 45%, rgba(111,1,120,1) 46%, rgba(112,1,120,1) 47%, rgba(113,1,120,1) 48%, rgba(114,1,120,1) 49%, rgba(115,1,120,1) 50%, rgba(116,1,120,1) 51%, rgba(117,1,120,1) 52%, rgba(118,1,120,1) 53%, rgba(118,1,120,1) 54%, rgba(119,1,120,1) 55%, rgba(226,1,134,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(96,1,120,1) 28%,rgba(96,1,120,1) 30%,rgba(97,1,120,1) 31%,rgba(98,1,120,1) 32%,rgba(99,1,120,1) 33%,rgba(100,1,120,1) 34%,rgba(101,1,120,1) 35%,rgba(102,1,120,1) 36%,rgba(103,1,120,1) 37%,rgba(104,1,120,1) 38%,rgba(105,1,120,1) 39%,rgba(106,1,120,1) 40%,rgba(107,1,120,1) 41%,rgba(108,1,120,1) 42%,rgba(109,1,120,1) 43%,rgba(110,1,120,1) 44%,rgba(111,1,120,1) 45%,rgba(111,1,120,1) 46%,rgba(112,1,120,1) 47%,rgba(113,1,120,1) 48%,rgba(114,1,120,1) 49%,rgba(115,1,120,1) 50%,rgba(116,1,120,1) 51%,rgba(117,1,120,1) 52%,rgba(118,1,120,1) 53%,rgba(118,1,120,1) 54%,rgba(119,1,120,1) 55%,rgba(226,1,134,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(96,1,120,1) 28%,rgba(96,1,120,1) 30%,rgba(97,1,120,1) 31%,rgba(98,1,120,1) 32%,rgba(99,1,120,1) 33%,rgba(100,1,120,1) 34%,rgba(101,1,120,1) 35%,rgba(102,1,120,1) 36%,rgba(103,1,120,1) 37%,rgba(104,1,120,1) 38%,rgba(105,1,120,1) 39%,rgba(106,1,120,1) 40%,rgba(107,1,120,1) 41%,rgba(108,1,120,1) 42%,rgba(109,1,120,1) 43%,rgba(110,1,120,1) 44%,rgba(111,1,120,1) 45%,rgba(111,1,120,1) 46%,rgba(112,1,120,1) 47%,rgba(113,1,120,1) 48%,rgba(114,1,120,1) 49%,rgba(115,1,120,1) 50%,rgba(116,1,120,1) 51%,rgba(117,1,120,1) 52%,rgba(118,1,120,1) 53%,rgba(118,1,120,1) 54%,rgba(119,1,120,1) 55%,rgba(226,1,134,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#600178', endColorstr='#e20186',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-family: Proxima Nova Regular, Arial, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    padding: 15px 55px;
+    margin: 0 auto;
+    border-radius: 1111px;
+}
+
+.btn-mouse {
+    margin-top: 220px;
+    display: block;
+    text-align: center;
+}
+
+.btn-mouse a {
+    display: inline-block;
+    padding: 21px 13px;
+    background-image: url("../img/mouse.png");
+    background-repeat: no-repeat;
+    border-radius: 111px;
+}
+
+header .scroll-down {
+    font-family: Proxima Nova Light, Arial, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+/*-------------------------------header end-------------------------------*/
+
+/*-------------------------------code design-------------------------------*/
+
+.code-design {
+    background-image: url("../img/bg-code-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.code-design-rapper {
+    width: 1323px;
+    margin: 0 auto;
+    padding: 145px 0 140px 0;
+}
+
+.list-code {
+
+    overflow: hidden;
+}
+
+.list-code li {
+    line-height: 1.5;
+    float: left;
+    width: 582px;
+    text-align: left;
+}
+
+.list-code li:last-child {
+    margin-left: 150px;
+}
+
+.list-code h3 {
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.list-code p {
+    padding: 20px 0 40px 0;
+    font-size: 18px;
+}
+
+.list-code li span a {
+    margin-left: -372px;
+}
+
+.list-code-bold {
+    font-family: Proxima-Nova-Condensed-Bold, Arial, Tahoma, sans-serif;
+}
+
+/*-------------------------------code end-------------------------------*/
+
+/*-------------------------------what-we-do-------------------------------*/
+
+.what-we-do {
+    background-color: #fff;
+    padding: 100px 0 105px 0;
+}
+
+.what-we-wrapper {
+    width: 1323px;
+    margin: 0 auto;
+}
+
+.what-we-wrapper > h3 {
+    font-family: Proxima-Nova-Condensed-Bold, Arial, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.list-what-do {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.list-what-do li {
+    text-align: left;
+    float: left;
+    width: 582px;
+    margin-bottom: 105px;
+}
+
+.web-applacations, .desktop-applications {
+    margin-left: 155px;
+}
+
+.list-what-do li h4 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: Proxima-Nova-Condensed-Bold, Arial, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 30px;
+}
+
+.list-what-do li p {
+    line-height: 1.5;
+    padding-left: 150px;
+    color: #949494;
+    font-size: 18px;
+}
+
+.web-design {
+    background-image: url("../img/web-design.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.web-applacations {
+    background-image: url("../img/web-applacations.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.digital-painting {
+    background-image: url("../img/digital-painting.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.desktop-applications {
+    background-image: url("../img/desktop-applications.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+/*-------------------------------what-we-do  end-------------------------------*/
+
+/*-------------------------------slider---------------------------------------*/
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.list-slider {
+    overflow: hidden;
+}
+
+.list-slider li {
+    float: left;
+    width: 33.3%;
+}
+
+.list-slider li img {
+    display: block;
+    width: 100%;
+}
+
+.list-slider-hover  {
+    background-color: #000;
+}
+
+.list-slider-hover img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.list-slider-hover:hover img {
+    opacity: .5;
+}
+
+.list-slider-neptune {
+    overflow: hidden;
+    position: absolute;
+    margin: -315px 0 0 90px;
+}
+
+.list-slider-neptune li {
+    float: none;
+    color: #d0d4d4;
+    width: 380px;
+    text-align: center;
+}
+
+.list-slider-neptune li h3 {
+    padding-bottom: 20px;
+    font-family: Proxima-Nova-Condensed-Bold, Arial, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+
+.list-slider-neptune li p {
+    line-height: 1.5;
+    padding-bottom: 30px;
+    font-family: Proxima-Nova-Condensed-Bold, Arial, Tahoma, sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*-------------------------------what-we-do  end-------------------------------*/
+
+/*-------------------------------about-us---------------------------------------*/
+
+.about-us {
+    width: 100%;
+    background-image: url("../img/bg-about-us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0 120px 0;
+    text-align: center;
+}
+
+.about-us-wrapper {
+    width: 1323px;
+    margin: 0 auto;
+}
+
+.about-us header {
+    overflow: hidden;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.about-us h3 {
+    font-size: 48px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.about-us p {
+    line-height: 1.5;
+    color: #949494;
+    font-size: 18px;
+}
+
+.list-about-us {
+    margin: 130px auto 110px;
+}
+
+.list-about-us li {
+    display: inline-block;
+    width: 250px;
+    margin-left: 50px;
+}
+
+.list-about-us li:first-child {
+    margin-left: 10px;
+}
+
+.list-about-us li span {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border: 1px solid transparent;
+    border-radius: 1111px;
+    margin: 0 auto;
+}
+
+.list-about-us li h3 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.about-us p {
+    line-height: 1.3;
+    color: #949494;
+    font-size: 18px;
+}
+
+.btn-watch {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-watch a {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#600178+28,600178+30,610178+31,620178+32,630178+33,640178+34,650178+35,660178+36,670178+37,680178+38,690178+39,6a0178+40,6b0178+41,6c0178+42,6d0178+43,6e0178+44,6f0178+45,6f0178+46,700178+47,710178+48,720178+49,730178+50,740178+51,750178+52,760178+53,760178+54,770178+55,e20186+100 */
+    background: rgb(96,1,120); /* Old browsers */
+    background: -moz-linear-gradient(45deg,  rgba(96,1,120,1) 28%, rgba(96,1,120,1) 30%, rgba(97,1,120,1) 31%, rgba(98,1,120,1) 32%, rgba(99,1,120,1) 33%, rgba(100,1,120,1) 34%, rgba(101,1,120,1) 35%, rgba(102,1,120,1) 36%, rgba(103,1,120,1) 37%, rgba(104,1,120,1) 38%, rgba(105,1,120,1) 39%, rgba(106,1,120,1) 40%, rgba(107,1,120,1) 41%, rgba(108,1,120,1) 42%, rgba(109,1,120,1) 43%, rgba(110,1,120,1) 44%, rgba(111,1,120,1) 45%, rgba(111,1,120,1) 46%, rgba(112,1,120,1) 47%, rgba(113,1,120,1) 48%, rgba(114,1,120,1) 49%, rgba(115,1,120,1) 50%, rgba(116,1,120,1) 51%, rgba(117,1,120,1) 52%, rgba(118,1,120,1) 53%, rgba(118,1,120,1) 54%, rgba(119,1,120,1) 55%, rgba(226,1,134,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  rgba(96,1,120,1) 28%,rgba(96,1,120,1) 30%,rgba(97,1,120,1) 31%,rgba(98,1,120,1) 32%,rgba(99,1,120,1) 33%,rgba(100,1,120,1) 34%,rgba(101,1,120,1) 35%,rgba(102,1,120,1) 36%,rgba(103,1,120,1) 37%,rgba(104,1,120,1) 38%,rgba(105,1,120,1) 39%,rgba(106,1,120,1) 40%,rgba(107,1,120,1) 41%,rgba(108,1,120,1) 42%,rgba(109,1,120,1) 43%,rgba(110,1,120,1) 44%,rgba(111,1,120,1) 45%,rgba(111,1,120,1) 46%,rgba(112,1,120,1) 47%,rgba(113,1,120,1) 48%,rgba(114,1,120,1) 49%,rgba(115,1,120,1) 50%,rgba(116,1,120,1) 51%,rgba(117,1,120,1) 52%,rgba(118,1,120,1) 53%,rgba(118,1,120,1) 54%,rgba(119,1,120,1) 55%,rgba(226,1,134,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  rgba(96,1,120,1) 28%,rgba(96,1,120,1) 30%,rgba(97,1,120,1) 31%,rgba(98,1,120,1) 32%,rgba(99,1,120,1) 33%,rgba(100,1,120,1) 34%,rgba(101,1,120,1) 35%,rgba(102,1,120,1) 36%,rgba(103,1,120,1) 37%,rgba(104,1,120,1) 38%,rgba(105,1,120,1) 39%,rgba(106,1,120,1) 40%,rgba(107,1,120,1) 41%,rgba(108,1,120,1) 42%,rgba(109,1,120,1) 43%,rgba(110,1,120,1) 44%,rgba(111,1,120,1) 45%,rgba(111,1,120,1) 46%,rgba(112,1,120,1) 47%,rgba(113,1,120,1) 48%,rgba(114,1,120,1) 49%,rgba(115,1,120,1) 50%,rgba(116,1,120,1) 51%,rgba(117,1,120,1) 52%,rgba(118,1,120,1) 53%,rgba(118,1,120,1) 54%,rgba(119,1,120,1) 55%,rgba(226,1,134,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#600178', endColorstr='#e20186',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    font-family: Proxima Nova Regular, Arial, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    padding: 15px 55px;
+    margin: 0 auto;
+    border-radius: 1111px;
+}
+
+/*------------------------------about-us end------------------------------------*/
+
+/*------------------------------map------------------------------------*/
+
+.map {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+iframe {
+    border: 0;
+    width: 100%;
+}
+
+/*------------------------------map end------------------------------------*/
+
+
+
+footer {
+    margin: 60px auto 580px;
+    width: 100%;
+}
+
+footer div {
+    font-family: Proxima Nova Light, Arial, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #a7acbc;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer div > p {
+    margin-bottom: 15px;
+}
+
+footer div span {
+    font-weight: bold;
+}
