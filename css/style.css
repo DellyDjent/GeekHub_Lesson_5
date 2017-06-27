@@ -175,6 +175,7 @@ header .scroll-down {
     font-size: 14px;
     color: #fff;
     margin: 0;
+    display: block;
 }
 
 /*-------------------------------header end-------------------------------*/
